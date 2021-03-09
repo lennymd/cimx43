@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <ul class="dot_navigation_container">
+      <li class="dot_navigation_thing"></li>
+      <li class="dot_navigation_thing"></li>
+    </ul>
+
+    <!-- javascript lives in it's own file or within script tags -->
+    <script>
+      // The following line is the same as saying $('.dot_navigation_thing') in jquery
+      let a = document.getElementsByClassName('dot_navigation_thing');
+      // Console.log is your best friend for debugging.
+
+      // This gives us the whole list
+      console.log(a);
+
+      // this is the first thing on the page that has class name dot_navigation_thing
+      let first = a[1];
+
+      first.style.backgroundColor = 'blue';
+
+      a.addEventListener('click', function () {
+        // TODO get the number of the item.
+        // Make the color switch
+        // Make the other colors transparent
+      });
+      // We'll talk about lists more.
+      let a_list = [1, 2, 3, 4, 'lenny', 'cow', 'moo went the cow', [1, 3, 5, 7, 9]];
+      console.log(a_list[0]);
+    </script>
+  </body>
+</html>
